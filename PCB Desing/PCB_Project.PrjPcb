@@ -253,8 +253,109 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
+[Document13]
+DocumentPath=RPI_EIT.OutJob
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
 [GeneratedDocument1]
+DocumentPath=Project Outputs for PCB_Project\NC Drill\2_RPi.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument2]
+DocumentPath=Project Outputs for PCB_Project\Gerber\2_RPi.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument3]
+DocumentPath=Project Outputs for PCB_Project\Gerber\2_RPi.G1
+DItemRevisionGUID=
+
+[GeneratedDocument4]
+DocumentPath=Project Outputs for PCB_Project\Gerber\2_RPi.G2
+DItemRevisionGUID=
+
+[GeneratedDocument5]
+DocumentPath=Project Outputs for PCB_Project\Gerber\2_RPi.GBL
+DItemRevisionGUID=
+
+[GeneratedDocument6]
+DocumentPath=Project Outputs for PCB_Project\Gerber\2_RPi.GBO
+DItemRevisionGUID=
+
+[GeneratedDocument7]
+DocumentPath=Project Outputs for PCB_Project\Gerber\2_RPi.GBP
+DItemRevisionGUID=
+
+[GeneratedDocument8]
+DocumentPath=Project Outputs for PCB_Project\Gerber\2_RPi.GBS
+DItemRevisionGUID=
+
+[GeneratedDocument9]
+DocumentPath=Project Outputs for PCB_Project\Gerber\2_RPi.GM
+DItemRevisionGUID=
+
+[GeneratedDocument10]
+DocumentPath=Project Outputs for PCB_Project\Gerber\2_RPi.GM1
+DItemRevisionGUID=
+
+[GeneratedDocument11]
+DocumentPath=Project Outputs for PCB_Project\Gerber\2_RPi.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument12]
+DocumentPath=Project Outputs for PCB_Project\Gerber\2_RPi.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument13]
+DocumentPath=Project Outputs for PCB_Project\Gerber\2_RPi.GTP
+DItemRevisionGUID=
+
+[GeneratedDocument14]
+DocumentPath=Project Outputs for PCB_Project\Gerber\2_RPi.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument15]
+DocumentPath=Project Outputs for PCB_Project\NC Drill\2_RPi.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument16]
+DocumentPath=Project Outputs for PCB_Project\Gerber\2_RPi.REP
+DItemRevisionGUID=
+
+[GeneratedDocument17]
+DocumentPath=Project Outputs for Free Documents\ExportSTEP\2_RPi.step
+DItemRevisionGUID=
+
+[GeneratedDocument18]
+DocumentPath=Project Outputs for PCB_Project\ExportSTEP\2_RPi.step
+DItemRevisionGUID=
+
+[GeneratedDocument19]
+DocumentPath=Project Outputs for PCB_Project\NC Drill\2_RPi.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument20]
+DocumentPath=Project Outputs for PCB_Project\BOM\Bill of Materials-PCB_Project.xlsx
+DItemRevisionGUID=
+
+[GeneratedDocument21]
 DocumentPath=Project Outputs for PCB_Project\Design Rule Check - 2_RPi.html
+DItemRevisionGUID=
+
+[GeneratedDocument22]
+DocumentPath=Project Outputs for PCB_Project\Pick Place\Pick Place for 2_RPi.txt
 DItemRevisionGUID=
 
 [Configuration1]
