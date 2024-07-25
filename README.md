@@ -23,14 +23,14 @@ This is the first stage of a work in progress, with the PCB design currently con
 
 ## Electrical Specifications
 
-| Component           | Specification                  |
+| Specification           |                   |
 |---------------------|--------------------------------|
-| Power Supply        | 5V (from Raspberry Pi)         |
-| Number of Electrodes| 16                             |
-| ADC                 | High-Speed                     |
-| Mux                 | 2                               |
-| Wave Generator      | Integrated                     |
-| Additional Pinouts  | ADC analog inputs, Raspberry Pi|
+| Power Supply        | |
+| Number of Electrodes|                              |
+|                  |                      |
+|                  |                              |
+|       |                      |
+|   | |
 
 ## Pictures
 
