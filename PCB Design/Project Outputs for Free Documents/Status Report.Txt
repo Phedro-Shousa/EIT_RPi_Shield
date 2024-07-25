@@ -1,0 +1,14 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 12:54:24 On 25/07/2024
+
+Output: Export STEP
+Type  : ExportSTEP
+From  : Variant [[No Variations]] of PCB Document [2_RPi.PcbDoc]
+   Generated File[2_RPi.step]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 12:54:28 On 25/07/2024
