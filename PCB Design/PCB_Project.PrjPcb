@@ -101,7 +101,7 @@ GenerateClassCluster=0
 DocumentUniqueId=SHFUNJCG
 
 [Document4]
-DocumentPath=4_Supply.SchDoc
+DocumentPath=4_Protection.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=1
