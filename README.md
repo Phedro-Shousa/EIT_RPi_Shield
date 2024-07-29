@@ -33,12 +33,12 @@ This is the first stage of a work in progress, with the PCB design currently con
 |   | |
 
 ## Pictures
-
 ### Board
 
 ### Schematic
+<img src="https://github.com/Phedro-Shousa/EIT_RPi_Shield/blob/main/PCB%20Design/Schematic.png" alt="Schematic Picture" width="800">
 
 ### PCB Layout
-
+<img src="https://github.com/Phedro-Shousa/EIT_RPi_Shield/blob/main/PCB%20Design/PCB.png" alt="Schematic Picture" width="500">
 
 ---
