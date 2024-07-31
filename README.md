@@ -23,14 +23,24 @@ This is the first stage of a work in progress, with the PCB design currently con
 
 ## Electrical Specifications
 
-| Specification           |                   |
-|---------------------|--------------------------------|
-| Power Supply        | |
-| Number of Electrodes|                              |
-|                  |                      |
-|                  |                              |
-|       |                      |
-|   | |
+| Component           | Specification                                                  |
+|---------------------|----------------------------------------------------------------|
+| Power Supply        | 5V (from Raspberry Pi)                                         |
+| Electrodes          | - 16 Electrodes                                                |
+|                     | - 5 free ADC channels                                          |
+| ADC                 | - Input range ±5V or ±10V                                      |
+|                     | - 16-bit 20KSPS                                                |
+| Phase-Gain Detector | - Up to signals of 2.7GHz                                      |
+|                     | - Gain scale of 30mV/dB                                        |
+|                     | - Phase scale of 10mV/degree                                   |
+| Wave Generator      | - Output signal up to 12MHz                                    |
+|                     | - Serial CLK up to 40MHz                                       |
+|                     | - Output signal voltage: Max 4.9V (load of 100Ω) or 4.5V (1kΩ) |
+|                     | - Output signal voltage: Min 0.4V                              |
+| MUX                 | - 4Ω on resistance                                             |
+|                     | - Rail-to-rail                                                 |
+|                     | - Serial CLK up to 30MHz                                       |
+
 
 ## Pictures
 ### Board
