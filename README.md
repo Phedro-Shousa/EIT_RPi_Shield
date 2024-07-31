@@ -1,5 +1,6 @@
 # EIT_RPi_Shield: Electrical Impedance Tomography (EIT) Shield for Structural Health Monitoring (SHM)
 
+#ONGOING. NOT TESTED!
 ## Overview
 
 This project is an Electrical Impedance Tomography (EIT) shield system designed for Structural Health Monitoring (SHM). This shield is an educational device that allows you to "plug-and-play" and actively collect data using a Raspberry Pi.
