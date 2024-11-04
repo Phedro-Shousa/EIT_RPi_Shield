@@ -17,7 +17,7 @@ def transfer_file_to_laptop(filename):
     ip = "132.187.210.53"  # Replace with your laptop's IP address
 
     # Correct the file path on Windows laptop with double backslashes and quotes
-    destination_path = r"C:\\Users\\Pedro Sousa\\Desktop\\TOMOPLEX\\Redesign\\code\\log.txt"
+    destination_path = r"C:\\Users\\Pedro Sousa\\Desktop\\TOMOPLEX\\Redesign\\Rasp_Code\\log.txt"
 
     # Use scp to transfer the file to the laptop
     command = f"scp {filename} \"{user}@{ip}:{destination_path}\""
@@ -26,7 +26,7 @@ def transfer_file_to_laptop(filename):
     subprocess.run(command, shell=True)
 
 def main():
-    freq = 1000000
+    freq = 1000
     ClockFreq = 25000000
     
     print("Wav_Gem Test \n")
@@ -75,7 +75,7 @@ def main():
     spi.xfer([0x00, 0x00])  # Sine
     print("Sine 0x0000 \n")
     
-    channel = 7
+    channel = 3
     # Format the ADC readings as a string
     data = ""
     samples = 1024

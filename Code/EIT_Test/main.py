@@ -4,13 +4,13 @@ import ADG725 as mux
 import AD9833 as wg
 import send_data
 
-V_PHASE = 5
-V_AMP = 6
-CUR_SEN = 7
+V_AMP = 1
+V_PHASE = 2
+CUR_SEN = 3
 
 def init_ADC():
     adc_pins = {'convsta':6, 'reset':5, 'busy':22}
-    adc1 = adc.AD7606_SPI(5, 'simultaneous', adc_pins)
+    adc1 = adc.AD7606_SPI(5, adc_pins)
     print("ADC Object Created \n")
     print("ADC Reset \n")
     adc1.ADCreset()
@@ -61,7 +61,17 @@ def read_current(adc1):
         if r < min_value:
             min_value = r
         samples -= 1
-    print(f"Max Value: {max_value}, Min Value: {min_value}, Peak-Peak: {max_value - min_value}")
+    
+    peak_peak_current = (max_value - min_value)
+    avg_current = (max_value + min_value) / 2  # Example of avg current calculation
+    
+
+    print(f"Max Current: {(max_value/200):.2f} mA {max_value:.2f}\n")
+    print(f"Min Current: {(min_value/200):.2f} mA {min_value:.2f}\n")
+    print(f"Peak-Peak Current: {(peak_peak_current/200):.2f} mA {peak_peak_current:.2f}\n")
+    print(f"Average Current: {(avg_current/200):.2f} mA {avg_current:.2f}\n")
+
+    return max_value, min_value, peak_peak_current, avg_current
 
 def EIT_read(adc1, mux_in, mux_out):
     num_channels = 16
@@ -92,14 +102,17 @@ def main():
 
     start_wg(wg1)
     start_mux(mux_in, mux_out)
-
-    read_current(adc1)
+    start = time.time()
+    max_value, min_value, peak_peak_current, avg_current = read_current(adc1)
+    end = time.time()
+    result = (end - start)*1000
+    print(f"EIT TIME: {result:.2f} ms")
     wg1.set_frequency(3000)
 
     # Start EIT data collection
     amp, phase = EIT_read(adc1, mux_in, mux_out)
-    send_data.save_to_txt(amp, phase)
-    send_data.transfer_file("/home/pedro/Desktop/log.txt")
+    send_data.save_to_txt(amp, phase, max_value, min_value, peak_peak_current, avg_current)
+    send_data.transfer_file()
 
     close_devices(adc1, mux_in, mux_out, wg1)
 

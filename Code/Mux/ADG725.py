@@ -9,7 +9,6 @@ ADG725_B_ONLY = 0x40
 class ADG725:
     def __init__(self, mux1=True):
         GPIO.setmode(GPIO.BCM)
-
         # Set the SPI bus and select the correct chip select (CS) based on the flag
         if mux1:
             # If mux1, use chip select CS 3
@@ -17,7 +16,6 @@ class ADG725:
         else:
             # Otherwise, use chip select CS 1 for mux2
             self.spi = spidev.SpiDev(6, 0)
-        
         # Configure SPI parameters
         self.spi.max_speed_hz = 1000000
         self.spi.mode = 0b01

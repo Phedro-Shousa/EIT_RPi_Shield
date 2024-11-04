@@ -35,7 +35,7 @@ def main():
             print(f"ChannelA {i} \n")
             # Increment i, and reset to 0 when reaching 16
             i += 1
-            if i == 15:
+            if i == 16:
                 i = 0
             time.sleep(0.2)  # Small delay to prevent rapid consecutive increments
 
@@ -46,7 +46,7 @@ def main():
             print(f"ChannelB {j} \n")
             # Increment j, and reset to 0 when reaching 16
             j += 1
-            if j == 15:
+            if j == 16:
                 j = 0
             time.sleep(0.2)  # Small delay to prevent rapid consecutive increments
 
